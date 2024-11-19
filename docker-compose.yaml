@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    command: sh -c "uvicorn main:app --reload --port=8000 --host=0.0.0.0"
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+    environment:
+        - REDIS_HOST=redis
+        - REDIS_PORT=6379
+
+  redis:
+      image: "redis:alpine"
+      ports:
+          - "6379:6379"

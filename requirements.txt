@@ -1,0 +1,4 @@
+fastapi[standard]~=0.115.5
+redis~=5.2.0
+sqlmodel~=0.0.22
+pydantic~=2.9.2
