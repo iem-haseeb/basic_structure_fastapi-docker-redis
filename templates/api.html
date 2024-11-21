@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template API</title>
+</head>
+<style>
+
+button{
+    background-color: white;
+    width: 1000px;
+}
+</style>
+<body class="body">
+        {% for col in tabs["tabs"] %}
+        <form method="post" action="/api/tabs/{{ loop.index0 }}">
+                <button type="submit">
+                    <a href="{col.tab_name}">
+                        <div >
+                            <h2>{{ col.tab_name }}</h2>
+                            <p>{{  col.tab_rename}} <br> {{  col.tab_is_active}}</p>
+                        </div>
+                    </a>
+                </button>
+        </form>
+          {% endfor %}
+</body>
+</html>

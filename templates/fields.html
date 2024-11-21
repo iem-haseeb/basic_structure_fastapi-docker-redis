@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    button{
+    background-color: white;
+    width: 1000px;
+
+}
+</style>
+<body>
+    {% for col in secfield %}
+         <button >
+             <div >
+                 <h1>{{ col.field_name }}</h1>
+                 <p>{{  col.field_rename }}<br>{{col.field_is_active}} <br> {{  col.field_type}}</p>
+             </div>
+         </button>
+    {% endfor %}
+</body>
+</html>

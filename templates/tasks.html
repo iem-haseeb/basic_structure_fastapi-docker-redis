@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Your Tasks</title>
+    </head>
+    <style>
+        table, th, td {
+  border: 1px solid black;
+}
+    </style>
+    <body>
+        <button>
+            <a href="create_task" methods="post">Create New Task </a>
+        </button>
+        <button>
+            <a href="api" methods="post">Template API </a>
+        </button>
+         <button>
+            <a href="logout" methods="get">Logout </a>
+        </button>
+        <h1> List of Tasks </h1>
+        <table>
+            <tr>
+                <th>Task Name</th>
+                <th>Task Date</th>
+                <th>Task Time</th>
+            </tr>
+            {% for t in tasks: %}
+                <tr>
+                    <td>{{t.task_name}}</td>
+                    <td>{{t.task_date}}</td>
+                    <td>{{t.task_time}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

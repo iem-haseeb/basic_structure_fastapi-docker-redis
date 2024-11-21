@@ -1,20 +1,17 @@
 <html>
     <head>
-        <title>Basic Form</title>
-
+        <title>Login Form</title>
     </head>
     <body>
-        <h1>Basic White Form</h1>
-        <form method="POST" action="/user">
-
-            <label for="name">Username:</label><br>
-            <input type="text" name="name" id="name"><br>
-            <label for="email">Username:</label><br>
+        <form method="POST" action="/login">
+            <label for="email">Email:</label><br>
             <input type="email" name="email" id="email"><br>
             <label for="password">Password:</label><br>
             <input type="password" name="password" id="password"><br>
-          <button type="submit" value="Submit">Submit</button>
+          <button type="submit" value="Submit">LOGIN</button>
         </form>
-
+        <button>
+            <a href="register" methods="get">Register </a>
+        </button>
     </body>
 </html>

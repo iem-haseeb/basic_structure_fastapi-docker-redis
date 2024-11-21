@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    button{
+    background-color: white;
+    width: 1000px;
+
+}
+</style>
+<body>
+    {% for col in tabsec %}
+        <form method="post" action="/api/tabs/{{ loop.index0 }}/tabsec/{{ loop.index0 }}">
+            <button type="submit">
+                <a href="#">
+                    <div >
+                        <h2>{{ col.section_name }}</h2>
+                        <p>{{  col.section_rename}} <br> {{col.section_is_active}}</p>
+                    </div>
+                </a>
+            </button>
+        </form>
+    {% endfor %}
+</body>
+</html>

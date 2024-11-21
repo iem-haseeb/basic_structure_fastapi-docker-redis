@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/fastapi-docker-redis.iml" filepath="$PROJECT_DIR$/.idea/fastapi-docker-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/FASTAPI-TASK.iml" filepath="$PROJECT_DIR$/.idea/FASTAPI-TASK.iml" />
     </modules>
   </component>
 </project>
